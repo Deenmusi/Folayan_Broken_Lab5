@@ -154,8 +154,8 @@ namespace Lab5
         {
             //create random object RandNum, and assign no random value to rand
             Random Rand = new Random();
-            int GetRandom = Rand.Next(min, MAX);
-            return Randrand;
+            int GetRandom = Rand.Next(min, max);
+            return GetRandom;
 
 
         }
@@ -201,7 +201,7 @@ namespace Lab5
 
 
         //declare local constants
-        const int MIN = 1000 MAX = 5001, SEED = 733;
+        const int MIN = 1000, MAX = 5001, SEED = 733;
         private void nudHowMany_ValueChanged(object sender, EventArgs e)
         {
             //create random object with seed value of 733
@@ -325,7 +325,7 @@ namespace Lab5
                     txtCode.SelectAll();
                 }
 
-                else if (count === 2)
+                else if (count == 2)
                 { 
                    
                     MessageBox.Show(SECONDATTEMPT, PROGRAMMER);
